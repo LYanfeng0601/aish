@@ -48,10 +48,10 @@ done
 require_root
 disable_services
 
-rm -f /usr/bin/aish /usr/bin/aish-sandbox
-rm -f /lib/systemd/system/aish-sandbox.service /lib/systemd/system/aish-sandbox.socket
-rm -rf /usr/share/aish/skills
-rm -f /usr/share/doc/aish/skills-guide.md
+rm -f /usr/local/bin/aish /usr/local/bin/aish-sandbox
+rm -f /etc/systemd/system/aish-sandbox.service /etc/systemd/system/aish-sandbox.socket
+rm -rf /usr/local/share/aish/skills
+rm -f /usr/local/share/aish/skills-guide.md
 
 if [[ "$PURGE_CONFIG" -eq 1 ]]; then
 	rm -f /etc/aish/security_policy.yaml
